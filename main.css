@@ -1,0 +1,125 @@
+body {
+  background: white;
+}
+
+#container {
+  width: 80vw;
+  min-height: 100vh;
+  padding-top: 20px;
+  margin: 0 auto;
+  background: #6c5b78;
+}
+
+#inputs-list {
+  background: #c06c84;
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.fa-list-alt {
+  font-size: 1.3vw;
+
+  margin-top: 6px;
+  border-radius: 5px;
+}
+.fa-list-alt:hover {
+  background: #c06c84;
+}
+
+input {
+  margin: 2%;
+  font-size: 1.7vw;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+input:focus {
+  background-color: #ffb5ca;
+  border: none;
+}
+
+.itemList:nth-child(odd) {
+  background: white;
+}
+
+p {
+  font-size: 1.8vw;
+  color: #f8b195;
+}
+
+h1 {
+  font-size: 6.8vw;
+  text-align: center;
+  color: white;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+.grid1 > div {
+  text-align: center;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#gridH {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+#gridH > div {
+  background: #84b4c8;
+  border: 1px dotted red;
+  height: 40px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+#grid > div {
+  background: #c06c84;
+  border: 1px dotted white;
+  height: 40px;
+  padding-top: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+#grid > div:nth-child(odd) {
+  background: #84b4c8;
+}
+
+button {
+  padding: 3px;
+  margin: 3px;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through solid #c06c84;
+}
+.done:before {
+  content: "\2713";
+  display: inline-block;
+  font-size: 25px;
+  color: #c06c84;
+  padding: 0 3px 0 0;
+}
